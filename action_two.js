@@ -1,9 +1,10 @@
-import { Process } from "../ödev/next/process";
+import { Process } from "./next/process.js";
+
 
 export class ActionTwo extends Process {
     execute(){
         setTimeout(()=>{
-            console.log(thi.pl)            
+            console.log(this.pl)            
         },5000)
     }
 

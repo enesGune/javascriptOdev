@@ -1,4 +1,4 @@
-import { Process } from "../ödev/next/process";
+import { Process } from "./next/process.js";
 
 export class ActionOne extends Process {
     execute(){

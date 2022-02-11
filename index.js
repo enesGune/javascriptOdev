@@ -1,5 +1,5 @@
-import { ActionOne } from "../action_one";
-import { ActionTwo } from "../action_two";
+import { ActionOne } from "./action_one.js";
+import { ActionTwo } from "./action_two.js";
 
 let process1 = new ActionOne({id:0})
 let process2 = new ActionOne({id:1})
