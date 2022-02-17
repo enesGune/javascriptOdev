@@ -18,10 +18,16 @@ process1.out()
 
 
 
-var finish = function(){
+var finish = function(pl){
     console.log("finish")
 }
 
+var finishMy = function(pl){
+    console.log("my"+pl)
+    process4.last().doneSignal.unregister(finishMy)
+}
 
-process6.doneSignal.register(finish)
+process4.doneSignal.register(finish)
+process4.doneSignal.register(finishMy)
+process4.last().doneSignal.register(finish)
 //24 :00

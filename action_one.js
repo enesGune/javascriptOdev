@@ -5,11 +5,13 @@ export class ActionOne extends Process {
     execute(){
         setTimeout(()=>{
             console.log(this.pl)
+            this.actionPL.status = true;
+            this.actionPL.data = this.pl 
             this.sucsess();
-            if(this.finishAllObject){
-                this.finishAllObject()      
+            // if(this.finishAllObject){
+            //     this.finishAllObject()      
 
-            }
+            // }
         },500)
     }
 
